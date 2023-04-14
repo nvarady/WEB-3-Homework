@@ -4,11 +4,230 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "2F66EE1A-F279-4304-A82B-AC408D0A71EE"
+      "uuidString" : "971620EF-E5D3-4995-B166-ABAC01A917FF"
     }
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/Assets\/about_left.jpg" : {
+      "ft" : 16384,
+      "iS" : 22473,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/about_left.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
+    "\/Assets\/about_right.jpg" : {
+      "ft" : 16384,
+      "iS" : 22757,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/about_right.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/Arrow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Arrow.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/chance.jpg" : {
+      "ft" : 16384,
+      "iS" : 572560,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/chance.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/glass_animals.jpg" : {
+      "ft" : 16384,
+      "iS" : 979412,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/glass_animals.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/hero 2.jpg" : {
+      "ft" : 16384,
+      "iS" : 621682,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/hero 2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/hero1.jpg" : {
+      "ft" : 16384,
+      "iS" : 615625,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/hero1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/madonna.jpg" : {
+      "ft" : 16384,
+      "iS" : 255999,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/madonna.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/maxresdefault.jpeg" : {
+      "ft" : 16384,
+      "iS" : 92930,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/maxresdefault.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/PSD\/chance.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/PSD\/chance.psd",
+      "oF" : 0
+    },
+    "\/Assets\/PSD\/the offspring.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/PSD\/the offspring.psd",
+      "oF" : 0
+    },
+    "\/Assets\/Redesign.fig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/Redesign.fig",
+      "oF" : 0
+    },
+    "\/Assets\/Rihanna.jpg" : {
+      "ft" : 16384,
+      "iS" : 81107,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/Rihanna.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/search-icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/search-icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/SocialIcons.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/SocialIcons.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/Stock2.jpg" : {
+      "ft" : 16384,
+      "iS" : 199613,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/Stock2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/stockimage1.jpg" : {
+      "ft" : 16384,
+      "iS" : 240778,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/stockimage1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/the offspring.jpg" : {
+      "ft" : 16384,
+      "iS" : 819835,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/the offspring.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -20,6 +239,16 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/deploy\/image\/global\/logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/image\/global\/logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
@@ -44,7 +273,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
@@ -255,25 +484,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/README.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/README.html",
-      "oF" : 0,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
     }
   },
   "hooks" : [
@@ -283,10 +493,10 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 702560800.42181301,
+    "creationDate" : 702928554.81733,
     "displayValue" : "WEB-3-Homework",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets_gray",
+    "iconImageName" : "brackets-pink",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
