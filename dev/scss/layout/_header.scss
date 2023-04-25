@@ -6,12 +6,18 @@
   background-color: purple;  
 
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 5% 75% auto;
   grid-template-areas: ". header .";
 
   >div{
 
     grid-area: header;
+
+    img{
+
+      
+    }
+
 
   }
 }

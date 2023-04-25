@@ -327,8 +327,20 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .large-images {
   width: 100%;
+}
+
+.logo {
+  width: 80%;
 }
 
 /* =============
@@ -364,13 +376,12 @@ textarea {
 #header {
   background-color: purple;
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 5% 75% auto;
   grid-template-areas: ". header .";
 }
 #header > div {
   grid-area: header;
 }
-
 /* =============
     footer
 ============= */
