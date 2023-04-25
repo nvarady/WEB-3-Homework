@@ -500,14 +500,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/Content\/Hero.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/Content\/Hero.html",
-      "oF" : 0
-    },
     "\/dev\/Content\/Hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -532,20 +524,20 @@
       "oAP" : "\/dev\/Content\/HeroCards.html",
       "oF" : 0
     },
+    "\/dev\/Content\/Info.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/Info.html",
+      "oF" : 0
+    },
     "\/dev\/Content\/Search.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dev\/Content\/Search.html",
-      "oF" : 0
-    },
-    "\/dev\/Content\/WhatsNew.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/Content\/WhatsNew.html",
       "oF" : 0
     },
     "\/dev\/Content\/WhatsNew.Kit" : {
@@ -807,6 +799,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/Sections\/_HeroCards.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/Sections\/_Info.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/Sections\/_Info.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

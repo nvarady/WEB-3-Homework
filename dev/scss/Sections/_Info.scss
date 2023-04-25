@@ -1,17 +1,16 @@
 /* =============
-    HeroCards
+    Info
 ============= */
 
-#HeroCards{
+#Info{
 
     display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". HeroCards .";
+  grid-template-areas: ". Info .";
 
   >div{
 
-    grid-area: HeroCards;
+    grid-area: Info;
 
   }
-    
 }
