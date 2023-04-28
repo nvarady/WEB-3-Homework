@@ -1,0 +1,49 @@
+/* =============
+    Info
+============= */
+
+#Info{
+
+  >div{
+
+
+
+    grid-area: Info;
+
+    ul{
+
+      margin: 0;
+      padding: 0;
+      color: rgb(255, 255, 255);
+
+      #info-1{
+        background-color: rgb(221, 88, 22);
+        color: white;
+        padding: 16px;
+
+        display: grid;
+        grid-template-columns: 70% auto;
+      }
+
+      #info-2{
+        background-color: rgb(182, 70, 15);
+        padding: 16px;
+      }
+     
+      
+      @include md{
+
+        display: grid;
+        grid-template-columns: 40% auto;
+      
+      @include lg{
+
+          display: grid;
+          grid-template-columns: 50% auto;
+        
+      }
+      
+    }
+  }
+}
+}

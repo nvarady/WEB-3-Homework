@@ -1,0 +1,38 @@
+/* =============
+    Search
+============= */
+#Search{
+
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". search .";
+
+    >div{
+
+
+        grid-area: search;
+
+
+    
+        ul{
+            display: grid;
+            grid-template-columns: 80% auto;
+            gap: 16px;
+            padding-top: 8px;
+            width: 100%;
+           
+            #top-button{
+
+                color: white;
+                background-color: orange;
+                width: 100%;
+            }
+
+            #input{
+
+                width: 100%;
+            }
+      }
+    }
+}

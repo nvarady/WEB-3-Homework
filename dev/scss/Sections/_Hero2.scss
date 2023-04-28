@@ -1,0 +1,20 @@
+/* =============
+    Hero2
+============= */
+#Hero2{
+
+    ul{
+
+        @include md{
+
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+        li{
+
+
+
+
+        }
+    }
+}

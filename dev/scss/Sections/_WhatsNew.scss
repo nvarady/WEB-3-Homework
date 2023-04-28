@@ -1,0 +1,78 @@
+/* =============
+    WhatsNew
+============= */
+
+#WhatsNew{
+
+  display: grid;
+  grid-template-columns: 16px auto 16px ;
+  grid-template-areas: ". WhatsNew .";
+  background-color: rgb(53, 16, 110);;
+  width: 100%;
+
+
+  >div{
+
+    grid-area: WhatsNew;
+    margin-bottom: 24px;
+
+    ul{
+
+      @include md{
+
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4,fr1);
+        grid-template-areas: 
+        "c1,c1,c2,c2"
+        "c3,c3,c4,c4"
+        "c5,c5";
+        
+
+      }
+
+      @include lg{
+
+
+
+
+
+      }
+
+      
+      
+      li{
+
+      
+
+        background-color: white;
+        text-align: center;
+        padding: 16px;
+        margin-top: 24px;
+   
+    }
+
+    #c1{
+      grid-area: c1;
+    }
+
+    #c2{
+     grid-area: c2;
+    }
+
+    #c3{
+    grid-area: c3;
+    }
+
+    #c4{
+      grid-area: c4;
+    }
+
+    #c5{
+      grid-area: c5;
+    }
+
+
+  }
+ }
+}
