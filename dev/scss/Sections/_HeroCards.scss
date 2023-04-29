@@ -15,21 +15,14 @@
 
 
     ul{
-
-
       margin: 16px;
-      
-      
-      
-      
+           
       @include md{
 
         display: grid;
         grid-template-columns: 50% auto;
         gap: 16px;
-        margin-bottom: 0;
-      
-     
+        margin-bottom: 0;    
       }
 
       li{
@@ -37,15 +30,8 @@
         background-color: white;
         padding: 16px;
         margin-bottom: 16px;
-     
-
-
-        
-       
     
-
       }
-
 
       }
     }

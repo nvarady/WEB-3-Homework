@@ -3,14 +3,60 @@
 ============= */
 
 #footer{
-    
-    display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". footer .";
 
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+
+
+    
   >div{
 
-    grid-area: footer;
+   grid-area: footer;
+  
 
-  }
+    #locations{
+
+      grid-area: locations;
+      grid-template-columns: 70% auto;
+    }
+
+    #social-icons{
+
+      grid-area: social-icons;
+      grid-template-columns: 70% auto;
+
+      li{}
+    }
+
+    #newsletter{
+
+      grid-area: newsletter;
+      grid-template-columns: 70% auto;
+    }
+    
+
+
+    @include md{
+
+
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: 
+      "locations newsletter"
+      ". social-icons";
+    }
+
+    @include lg{
+
+
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-areas: 
+      "locations newsletter social-icons";
+    }
+}
+
+
+   
 }

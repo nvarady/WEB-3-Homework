@@ -395,6 +395,32 @@ textarea {
 #footer > div {
   grid-area: footer;
 }
+#footer > div #locations {
+  grid-area: locations;
+  grid-template-columns: 70% auto;
+}
+#footer > div #social-icons {
+  grid-area: social-icons;
+  grid-template-columns: 70% auto;
+}
+#footer > div #newsletter {
+  grid-area: newsletter;
+  grid-template-columns: 70% auto;
+}
+@media (min-width: 768px) {
+  #footer > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "locations newsletter" ". social-icons";
+  }
+}
+@media (min-width: 1024px) {
+  #footer > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "locations newsletter social-icons";
+  }
+}
 
 /* =============
     Hero
@@ -480,41 +506,46 @@ textarea {
   margin-bottom: 24px;
 }
 @media (min-width: 768px) {
-  #WhatsNew > div ul {
+  #WhatsNew ul {
     display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(4, fr1);
-    grid-template-areas: "c1,c1,c2,c2" "c3,c3,c4,c4" "c5,c5";
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
   }
 }
-#WhatsNew > div ul li {
+@media (min-width: 1024px) {
+  #WhatsNew ul {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "c1 c1 c2 c2 c3 c3" ". c4 c4 c5 c5 .";
+  }
+}
+#WhatsNew li {
   background-color: white;
   text-align: center;
   padding: 16px;
   margin-top: 24px;
 }
-#WhatsNew > div ul #c1 {
+#WhatsNew #c1 {
   grid-area: c1;
 }
-#WhatsNew > div ul #c2 {
+#WhatsNew #c2 {
   grid-area: c2;
 }
-#WhatsNew > div ul #c3 {
+#WhatsNew #c3 {
   grid-area: c3;
 }
-#WhatsNew > div ul #c4 {
+#WhatsNew #c4 {
   grid-area: c4;
 }
-#WhatsNew > div ul #c5 {
+#WhatsNew #c5 {
   grid-area: c5;
 }
 
 /* =============
     Info
 ============= */
-#Info > div {
-  grid-area: Info;
-}
 #Info > div ul {
   margin: 0;
   padding: 0;
