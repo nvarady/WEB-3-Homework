@@ -2,6 +2,22 @@
     Base
 ============= */
 
+button{
+
+    background-color: var(--light-orange);
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+input{
+
+    border: none;
+    
+   
+}
 ul{
     margin: 0;
     padding: 0;
@@ -23,3 +39,34 @@ ul{
 
     width: 50%;
 }
+
+.show-md{
+
+    display: none;
+    @include md{
+
+        display: block;
+    }
+}
+
+.show-large{
+    display: none;
+    @include lg{
+
+        display: block;
+    }
+
+}
+
+
+.show-xl{
+
+    display: none;
+    @include xl{
+
+        display: block;
+
+
+}
+    
+    }

@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 16px auto 16px ;
   grid-template-areas: ". WhatsNew .";
-  background-color: rgb(53, 16, 110);;
+  background-color:var(--dark-purple);
   width: 100%;
 
   >div{
@@ -15,15 +15,24 @@
     grid-area: WhatsNew;
     margin-bottom: 24px;
 
+    #new{
+
+      color: white;
+      margin-top: 36px;
+
     }
+
+    
     ul{
 
       @include md{
 
         display: grid;
         gap: 16px;
+        margin-top: 0px; 
         grid-template-columns: repeat(4,1fr);
         grid-template-areas: 
+        ". new new ."
         "c1 c1 c2 c2"
         "c3 c3 c4 c4"
         ". c5 c5 .";
@@ -32,13 +41,11 @@
 
         display: grid;
         gap: 16px;
+        margin-top: 0px; 
         grid-template-columns: repeat(6,1fr);
         grid-template-areas: 
         "c1 c1 c2 c2 c3 c3"
         ". c4 c4 c5 c5 ."
-    
-
-
 
       }
       
@@ -46,10 +53,23 @@
 
       li{
 
+        img{
+
+          width: 100%;
+          padding: none;
+        }
+
         background-color: white;
         text-align: center;
-        padding: 16px;
+        padding-bottom: 16px;
         margin-top: 24px; 
+
+        button{
+
+          height: 27px;
+          width: 98px;
+          padding: 8px 8px;
+        }
     }
  #c1{
 
@@ -87,3 +107,4 @@
 
   }
  
+}

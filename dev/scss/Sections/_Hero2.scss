@@ -3,18 +3,34 @@
 ============= */
 #Hero2{
 
-    ul{
+
 
         @include md{
 
             display: grid;
             grid-template-columns: 50% auto;
         }
-        li{
+       
+        @include xl{
 
 
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas: "h3 h2"
+            "h3 h1";
 
-
+            #h1{
+                grid-area: h1;
+                width: 100%;
+            }
+            #h2{
+                grid-area: h2;
+                width: 100%;
+            }
+            #h3{
+                grid-area: h3;
+                width: 100%;
+            }
         }
+        
     }
-}

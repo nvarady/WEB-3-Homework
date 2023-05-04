@@ -7,6 +7,8 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+    padding-bottom: 24px;
+    padding-top: 24px;
 
 
     
@@ -18,39 +20,78 @@
     #locations{
 
       grid-area: locations;
-      grid-template-columns: 70% auto;
+     
     }
 
-    #social-icons{
+    #follow{
 
       grid-area: social-icons;
-      grid-template-columns: 70% auto;
 
-      li{}
+      ul{
+
+        display: flex;
+        gap: 24px;
+
+      }
+
+   
     }
 
     #newsletter{
 
       grid-area: newsletter;
-      grid-template-columns: 70% auto;
-    }
-    
+      width: 357px;
 
+      h1{
+
+
+      }
+
+      div{
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        
+        #email-input{
+
+          grid-area: email-input;
+
+          background-color: var(--pale-orange);
+          width: 357px;
+          height: 50px;
+          margin-left: auto
+    
+  
+        }
+  
+        #sign-up{
+
+          grid-area: sign-up;
+          width: 76px;
+          height: 27px;
+          margin-left: auto   
+        }
+      }
+    }
 
     @include md{
 
 
       display: grid;
+      gap: 16px;
       grid-template-columns: repeat(2,1fr);
       grid-template-areas: 
       "locations newsletter"
-      ". social-icons";
+      "locations social-icons";
     }
 
     @include lg{
 
 
       display: grid;
+      gap: 16px;
       grid-template-columns: repeat(3,1fr);
       grid-template-areas: 
       "locations newsletter social-icons";

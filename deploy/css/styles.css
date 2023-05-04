@@ -13,6 +13,10 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --dark-purple:#342941;
+  --dark-orange:#C04D32;
+  --light-orange:#EE6C4D;
+  --pale-orange:#FAD3CA;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -327,6 +331,18 @@ template {
 /* =============
     Base
 ============= */
+button {
+  background-color: var(--light-orange);
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input {
+  border: none;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -343,6 +359,33 @@ ul li {
   padding-top: 3%;
   padding-bottom: 2%;
   width: 50%;
+}
+
+.show-md {
+  display: none;
+}
+@media (min-width: 768px) {
+  .show-md {
+    display: block;
+  }
+}
+
+.show-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-large {
+    display: block;
+  }
+}
+
+.show-xl {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .show-xl {
+    display: block;
+  }
 }
 
 /* =============
@@ -376,7 +419,7 @@ textarea {
     Header
 ============= */
 #header {
-  background-color: purple;
+  background-color: var(--dark-purple);
   display: grid;
   grid-template-columns: 5% 75% auto;
   grid-template-areas: ". header .";
@@ -391,32 +434,56 @@ textarea {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 #footer > div {
   grid-area: footer;
 }
 #footer > div #locations {
   grid-area: locations;
-  grid-template-columns: 70% auto;
 }
-#footer > div #social-icons {
+#footer > div #follow {
   grid-area: social-icons;
-  grid-template-columns: 70% auto;
+}
+#footer > div #follow ul {
+  display: flex;
+  gap: 24px;
 }
 #footer > div #newsletter {
   grid-area: newsletter;
-  grid-template-columns: 70% auto;
+  width: 357px;
+}
+#footer > div #newsletter div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#footer > div #newsletter div #email-input {
+  grid-area: email-input;
+  background-color: var(--pale-orange);
+  width: 357px;
+  height: 50px;
+  margin-left: auto;
+}
+#footer > div #newsletter div #sign-up {
+  grid-area: sign-up;
+  width: 76px;
+  height: 27px;
+  margin-left: auto;
 }
 @media (min-width: 768px) {
   #footer > div {
     display: grid;
+    gap: 16px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "locations newsletter" ". social-icons";
+    grid-template-areas: "locations newsletter" "locations social-icons";
   }
 }
 @media (min-width: 1024px) {
   #footer > div {
     display: grid;
+    gap: 16px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "locations newsletter social-icons";
   }
@@ -429,16 +496,36 @@ textarea {
     Hero2
 ============= */
 @media (min-width: 768px) {
-  #Hero2 ul {
+  #Hero2 {
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
+@media (min-width: 1200px) {
+  #Hero2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "h3 h2" "h3 h1";
+  }
+  #Hero2 #h1 {
+    grid-area: h1;
+    width: 100%;
+  }
+  #Hero2 #h2 {
+    grid-area: h2;
+    width: 100%;
+  }
+  #Hero2 #h3 {
+    grid-area: h3;
+    width: 100%;
+  }
+}
+
 /* =============
     HeroCards
 ============= */
 #HeroCards {
-  background-color: rgb(53, 16, 110);
+  background-color: var(--dark-purple);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". HeroCards .";
@@ -455,19 +542,29 @@ textarea {
     grid-template-columns: 50% auto;
     gap: 16px;
     margin-bottom: 0;
+    max-width: 992px;
   }
 }
 #HeroCards > div ul li {
   background-color: white;
-  padding: 16px;
+  padding: 8px 16px;
   margin-bottom: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#HeroCards > div ul li div button {
+  width: 98px;
+  height: 27px;
+  padding: 8px 24px;
+  text-align: center;
 }
 
 /* =============
     Search
 ============= */
 #Search {
-  background-color: blanchedalmond;
+  background-color: white;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
@@ -476,19 +573,22 @@ textarea {
   grid-area: search;
 }
 #Search > div ul {
-  display: grid;
-  grid-template-columns: 80% auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   gap: 16px;
   padding-top: 8px;
   width: 100%;
 }
 #Search > div ul #top-button {
   color: white;
-  background-color: orange;
-  width: 100%;
+  width: 61px;
+  height: 49px;
 }
 #Search > div ul #input {
-  width: 100%;
+  min-width: 245px;
+  max-width: 999px;
+  height: 43px;
 }
 
 /* =============
@@ -498,78 +598,99 @@ textarea {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". WhatsNew .";
-  background-color: rgb(53, 16, 110);
+  background-color: var(--dark-purple);
   width: 100%;
 }
 #WhatsNew > div {
   grid-area: WhatsNew;
   margin-bottom: 24px;
 }
+#WhatsNew > div #new {
+  color: white;
+  margin-top: 36px;
+}
 @media (min-width: 768px) {
-  #WhatsNew ul {
+  #WhatsNew > div ul {
     display: grid;
     gap: 16px;
+    margin-top: 0px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
+    grid-template-areas: ". new new ." "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
   }
 }
 @media (min-width: 1024px) {
-  #WhatsNew ul {
+  #WhatsNew > div ul {
     display: grid;
     gap: 16px;
+    margin-top: 0px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "c1 c1 c2 c2 c3 c3" ". c4 c4 c5 c5 .";
   }
 }
-#WhatsNew li {
+#WhatsNew > div li {
   background-color: white;
   text-align: center;
-  padding: 16px;
+  padding-bottom: 16px;
   margin-top: 24px;
 }
-#WhatsNew #c1 {
+#WhatsNew > div li img {
+  width: 100%;
+  padding: none;
+}
+#WhatsNew > div li button {
+  height: 27px;
+  width: 98px;
+  padding: 8px 8px;
+}
+#WhatsNew > div #c1 {
   grid-area: c1;
 }
-#WhatsNew #c2 {
+#WhatsNew > div #c2 {
   grid-area: c2;
 }
-#WhatsNew #c3 {
+#WhatsNew > div #c3 {
   grid-area: c3;
 }
-#WhatsNew #c4 {
+#WhatsNew > div #c4 {
   grid-area: c4;
 }
-#WhatsNew #c5 {
+#WhatsNew > div #c5 {
   grid-area: c5;
 }
 
 /* =============
     Info
 ============= */
-#Info > div ul {
+#Info > div {
   margin: 0;
   padding: 0;
   color: rgb(255, 255, 255);
 }
-#Info > div ul #info-1 {
-  background-color: rgb(221, 88, 22);
+#Info > div #info-1 {
+  background-color: var(--light-orange);
   color: white;
   padding: 16px;
   display: grid;
   grid-template-columns: 70% auto;
 }
-#Info > div ul #info-2 {
-  background-color: rgb(182, 70, 15);
+#Info > div #info-1 img {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 8px;
+  align-content: left;
+}
+#Info > div #info-2 {
+  background-color: var(--dark-orange);
   padding: 16px;
 }
 @media (min-width: 768px) {
-  #Info > div ul {
+  #Info > div {
     display: grid;
     grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
-  #Info > div ul {
+  #Info > div {
     display: grid;
     grid-template-columns: 50% auto;
   }

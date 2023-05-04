@@ -3,7 +3,7 @@
 ============= */
 #Search{
 
-    background-color: blanchedalmond;
+    background-color: white;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
@@ -16,8 +16,9 @@
 
     
         ul{
-            display: grid;
-            grid-template-columns: 80% auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
             gap: 16px;
             padding-top: 8px;
             width: 100%;
@@ -25,13 +26,16 @@
             #top-button{
 
                 color: white;
-                background-color: orange;
-                width: 100%;
+                width: 61px;
+                height: 49px;
             }
 
             #input{
 
-                width: 100%;
+                min-width: 245px;
+        
+                max-width: 999px;
+                height: 43px;
             }
       }
     }

@@ -4,7 +4,7 @@
 
 #HeroCards{
 
-  background-color: rgb(53, 16, 110);
+  background-color: var(--dark-purple);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". HeroCards .";
@@ -22,14 +22,40 @@
         display: grid;
         grid-template-columns: 50% auto;
         gap: 16px;
-        margin-bottom: 0;    
+        margin-bottom: 0; 
+        max-width: 992px;   
       }
 
       li{
 
         background-color: white;
-        padding: 16px;
+        padding: 8px 16px;
         margin-bottom: 16px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        div{
+          
+
+
+          h1{
+
+
+          }
+
+          button{
+
+            width: 98px;
+            height: 27px;
+            padding: 8px 24px;
+            text-align: center;
+
+
+          }
+
+          
+        }
     
       }
 
