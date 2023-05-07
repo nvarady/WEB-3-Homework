@@ -1,0 +1,81 @@
+/* =============
+    details
+============= */
+
+#details{
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". details .";
+    padding-top: 40px;
+    background-color: var(--cantelope100);
+
+    >div{
+
+        grid-area: details;
+
+
+         ul{
+            padding-left: 24px;
+            padding-right: 24px;
+
+            @include lg{
+
+                margin: 8px 180px;
+
+                display: grid;
+                grid-template-columns: repeat(6,1fr);
+                gap: 20px;
+                grid-template-areas:
+                 ". i1 i1 i2 i2 ."
+                 "i3 i3 i4 i4 i5 i5";
+
+
+                #i1{
+                    grid-area: i1;
+                }
+                #i2{
+                    grid-area: i2;
+                }
+                #i3{
+                    grid-area: i3;
+                }
+                #i4{
+                    grid-area: i4;
+                }
+                #i5{
+                    grid-area: i5;
+                }
+
+            }
+
+
+         li{
+            
+
+            background-color: var(--cherry90);
+            width: 100%;
+            height: 132px;
+                
+
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+                
+                p{
+                    margin: auto; 
+                    text-align: center;
+                    line-height: 22px;    
+                              
+                }
+
+
+                
+            }
+        }
+
+    }
+   
+}

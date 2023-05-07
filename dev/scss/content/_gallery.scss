@@ -1,0 +1,30 @@
+/* =============
+    gallery
+============= */
+#gallery{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery .";
+    background-color: var(--cherry80);
+
+    div{
+        grid-area: gallery;
+        margin: 20px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        @include lg{
+            flex-direction: row;
+            padding: 0px 180px;
+        }
+       
+
+        img{
+            width: 100%;
+        }
+
+    }
+}
