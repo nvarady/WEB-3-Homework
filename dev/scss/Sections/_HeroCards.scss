@@ -5,41 +5,68 @@
 #HeroCards{
 
   background-color: var(--dark-purple);
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". HeroCards .";
+  padding-top: 24px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
-  >div{
+
+  @include md{
+
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". HeroCards .";
+
+
+
+  }
+
+  
+  
+
+ >div{
 
     grid-area: HeroCards;
+  
 
+
+ 
 
     ul{
-      margin: 16px;
+  
            
       @include md{
 
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns:repeat(2,1fr);
         gap: 16px;
         margin-bottom: 0; 
-        max-width: 992px;   
+        width: 100%;
+
+          
       }
+
+
 
       li{
 
         background-color: white;
-        padding: 8px 16px;
+        padding: 16px;
         margin-bottom: 16px;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
 
+
         div{
+
           
 
-
           h1{
+
+            padding-right: 16px;
 
 
           }
@@ -48,10 +75,15 @@
 
             width: 98px;
             height: 27px;
-            padding: 8px 24px;
-            text-align: center;
+            
+            
 
 
+          }
+
+          img{
+
+       
           }
 
           

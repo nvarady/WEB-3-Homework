@@ -12,16 +12,17 @@
 
 
         grid-area: search;
+        
 
 
     
         ul{
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 80% auto;
             gap: 16px;
             padding-top: 8px;
             width: 100%;
+            justify-content: center;
            
             #top-button{
 
@@ -31,10 +32,8 @@
             }
 
             #input{
+                width: 100%;
 
-                min-width: 245px;
-        
-                max-width: 999px;
                 height: 43px;
             }
       }

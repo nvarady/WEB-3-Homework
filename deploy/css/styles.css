@@ -337,6 +337,7 @@ button {
   border: none;
   font-size: 14px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  align-content: center;
 }
 
 input {
@@ -443,6 +444,9 @@ textarea {
 #footer > div #locations {
   grid-area: locations;
 }
+#footer > div #locations h1 {
+  color: var(--dark-purple);
+}
 #footer > div #follow {
   grid-area: social-icons;
 }
@@ -452,30 +456,29 @@ textarea {
 }
 #footer > div #newsletter {
   grid-area: newsletter;
-  width: 357px;
+  height: 164px;
 }
 #footer > div #newsletter div {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 #footer > div #newsletter div #email-input {
   grid-area: email-input;
   background-color: var(--pale-orange);
-  width: 357px;
   height: 50px;
-  margin-left: auto;
 }
 #footer > div #newsletter div #sign-up {
   grid-area: sign-up;
   width: 76px;
   height: 27px;
+  margin-top: 16px;
   margin-left: auto;
 }
 @media (min-width: 768px) {
   #footer > div {
     display: grid;
     gap: 16px;
+    row-gap: 16px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "locations newsletter" "locations social-icons";
   }
@@ -483,7 +486,6 @@ textarea {
 @media (min-width: 1024px) {
   #footer > div {
     display: grid;
-    gap: 16px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "locations newsletter social-icons";
   }
@@ -492,6 +494,9 @@ textarea {
 /* =============
     Hero
 ============= */
+#hero {
+  margin-bottom: -24px;
+}
 /* =============
     Hero2
 ============= */
@@ -526,40 +531,45 @@ textarea {
 ============= */
 #HeroCards {
   background-color: var(--dark-purple);
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". HeroCards .";
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  #HeroCards {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". HeroCards .";
+  }
 }
 #HeroCards > div {
   grid-area: HeroCards;
 }
-#HeroCards > div ul {
-  margin: 16px;
-}
 @media (min-width: 768px) {
   #HeroCards > div ul {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-bottom: 0;
-    max-width: 992px;
+    width: 100%;
   }
 }
 #HeroCards > div ul li {
   background-color: white;
-  padding: 8px 16px;
+  padding: 16px;
   margin-bottom: 16px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
+#HeroCards > div ul li div h1 {
+  padding-right: 16px;
+}
 #HeroCards > div ul li div button {
   width: 98px;
   height: 27px;
-  padding: 8px 24px;
-  text-align: center;
 }
-
 /* =============
     Search
 ============= */
@@ -573,12 +583,12 @@ textarea {
   grid-area: search;
 }
 #Search > div ul {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 80% auto;
   gap: 16px;
   padding-top: 8px;
   width: 100%;
+  justify-content: center;
 }
 #Search > div ul #top-button {
   color: white;
@@ -586,8 +596,7 @@ textarea {
   height: 49px;
 }
 #Search > div ul #input {
-  min-width: 245px;
-  max-width: 999px;
+  width: 100%;
   height: 43px;
 }
 
@@ -640,7 +649,7 @@ textarea {
 #WhatsNew > div li button {
   height: 27px;
   width: 98px;
-  padding: 8px 8px;
+  text-align: center;
 }
 #WhatsNew > div #c1 {
   grid-area: c1;
@@ -662,7 +671,7 @@ textarea {
     Info
 ============= */
 #Info > div {
-  margin: 0;
+  margin-top: -24px;
   padding: 0;
   color: rgb(255, 255, 255);
 }

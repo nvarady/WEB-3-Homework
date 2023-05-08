@@ -14,18 +14,35 @@
     
   >div{
 
-   grid-area: footer;
+      grid-area: footer;
   
 
     #locations{
 
+      
       grid-area: locations;
+
+      h1{
+
+        color: var(--dark-purple);
+      }
+
+      ul{
+  
+
+        li{
+
+          
+        }
+      }
      
     }
 
     #follow{
 
       grid-area: social-icons;
+
+      
 
       ul{
 
@@ -40,7 +57,9 @@
     #newsletter{
 
       grid-area: newsletter;
-      width: 357px;
+      height: 164px;
+     
+      
 
       h1{
 
@@ -51,7 +70,7 @@
 
         display: flex;
         flex-direction: column;
-        gap: 16px;
+
 
         
         #email-input{
@@ -59,9 +78,9 @@
           grid-area: email-input;
 
           background-color: var(--pale-orange);
-          width: 357px;
+          
           height: 50px;
-          margin-left: auto
+          
     
   
         }
@@ -71,7 +90,10 @@
           grid-area: sign-up;
           width: 76px;
           height: 27px;
-          margin-left: auto   
+          margin-top: 16px;
+          margin-left: auto 
+           
+         
         }
       }
     }
@@ -81,6 +103,7 @@
 
       display: grid;
       gap: 16px;
+      row-gap: 16px;
       grid-template-columns: repeat(2,1fr);
       grid-template-areas: 
       "locations newsletter"
@@ -91,7 +114,7 @@
 
 
       display: grid;
-      gap: 16px;
+      
       grid-template-columns: repeat(3,1fr);
       grid-template-areas: 
       "locations newsletter social-icons";
