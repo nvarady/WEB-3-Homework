@@ -336,6 +336,10 @@ template {
 /* =============
     Base
 ============= */
+.dropshaddow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -498,7 +502,8 @@ textarea {
     margin: 8px 180px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    gap: 10px;
+    row-gap: 10px;
     grid-template-areas: ". i1 i1 i2 i2 ." "i3 i3 i4 i4 i5 i5";
   }
   #details > div ul #i1 {
@@ -553,6 +558,7 @@ textarea {
     margin: 0px 180px;
     padding: 32px 60px;
     background-color: var(--cherry90);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   #parts > div section {
     display: grid;
@@ -566,6 +572,10 @@ textarea {
   }
   #parts > div section #b2 {
     grid-area: b2;
+  }
+  #parts > div section #b2 ul {
+    display: flex;
+    align-items: center;
   }
   #parts > div section #b3 {
     grid-area: b3;
@@ -638,7 +648,10 @@ textarea {
 #tool-care > div #care-card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 60px;
+}
+#tool-care > div #care-card h1 {
+  padding-bottom: 20px;
 }
 #tool-care > div #care-card #sharpening {
   margin-bottom: 32px;
@@ -656,11 +669,13 @@ textarea {
     grid-template-columns: 50% auto;
     margin-bottom: 60px;
     gap: 24px;
+    align-items: center;
   }
   #tool-care > div #care-card #properuse {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "p2 p1";
+    align-items: center;
     gap: 24px;
   }
   #tool-care > div #care-card #properuse #p1 {

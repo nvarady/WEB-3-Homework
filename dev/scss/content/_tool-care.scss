@@ -20,11 +20,17 @@
         padding: 0px 20px;
         gap: 20px;
         
+        
 
         #care-card{
             display: flex;
             flex-direction: column;
-            margin-bottom: 32px;
+            margin-bottom: 60px;
+
+            h1{
+
+                padding-bottom: 20px;
+            }
 
             #sharpening{
                 margin-bottom: 32px;
@@ -49,13 +55,14 @@
                         grid-template-columns: 50% auto;
                         margin-bottom: 60px;
                         gap: 24px;
+                        align-items: center;
                         
                     }
                     #properuse{
                         display: grid;
                         grid-template-columns: 50% auto;
                         grid-template-areas: "p2 p1";
-                       
+                        align-items: center;
                         gap: 24px;
     
                         #p1{
