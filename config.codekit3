@@ -504,7 +504,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/Content\/Hero.html",
       "oF" : 0
     },
@@ -512,7 +512,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/Content\/Hero2.html",
       "oF" : 0
     },
@@ -520,7 +520,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/Content\/HeroCards.html",
       "oF" : 0
     },
@@ -544,7 +544,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/Content\/WhatsNew.html",
       "oF" : 0
     },
