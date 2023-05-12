@@ -7,18 +7,40 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". tool-care .";
     background-color: var(--cherry60);
-    padding-bottom: 60px;
+    line-height: 0;
+    //padding-bottom: 60px;
+
+    #tc-slant{
+        padding: 0;
+       // margin-bottom: 20px;
+        
+        
+        
+       
+
+        svg{
+
+            width: 100%;
+            
+            
+        }
+    }
+
+
     
 
     >div{
 
         grid-area: tool-care;
         background-color: var(--cantelope100);
+        border-radius: 10px;
         
         display: flex;
         flex-direction: column;
         padding: 0px 20px;
         gap: 20px;
+
+
         
         
 
@@ -29,7 +51,7 @@
 
             h1{
 
-                padding-bottom: 20px;
+                //padding-bottom: 20px;
             }
 
             #sharpening{
@@ -81,6 +103,17 @@
 
                 
             }
+        }
+
+
+        svg{
+
+           
+           line-height: 0;
+           display: block;
+           width: fit-content;
+           margin-top: -10px;
+            
         }
 
 

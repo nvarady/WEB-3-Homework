@@ -2,13 +2,37 @@
     details
 ============= */
 
+svg{
+
+    margin-top: -60px;
+    fill: var(--cantelope100);
+    line-height: 0;
+    margin-bottom: -10px;
+    display: block;
+
+    @include md{
+
+        margin-top: -120px;
+    }
+
+    @include lg{
+
+        margin-top: -140px;
+    }
+
+}
+
 #details{
 
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". details .";
-    padding-top: 40px;
+    grid-template-areas:   
+    ". details .";
     background-color: var(--cantelope100);
+    padding-top: 0px;
+    //margin-top: -60px;
+
+
 
     >div{
 
@@ -16,15 +40,21 @@
 
 
          ul{
-            padding-left: 24px;
-            padding-right: 24px;
+            padding: 0px 24px;
+
+            @include md{
+                margin: 0px 100px;
+                
+            }
+           
 
             @include lg{
 
-                margin: 8px 180px;
+                margin: 0px 180px;
 
                 display: grid;
                 grid-template-columns: repeat(6,1fr);
+                justify-content: center;
                 gap: 10px;
                 row-gap: 10px;
                 grid-template-areas:

@@ -1,30 +1,62 @@
 /* =============
     gallery
 ============= */
-#gallery{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". gallery .";
-    background-color: var(--cherry80);
 
-    div{
-        grid-area: gallery;
-        margin: 20px 0px;
+#gallery-container{
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: -60px 0px;
 
-        @include lg{
-            flex-direction: row;
-            padding: 0px 180px;
-        }
-       
 
-        img{
-            width: 100%;
-        }
 
+    svg{
+
+        width: 100%;
+        fill: var(--cherry80);
+        background-color: transparent;
+        line-height: 0;
+        display: block;
+        margin: -2px 0px;
+        
+        
     }
+
+    #gallery{
+       
+        background-color: var(--cherry80);
+        line-height: 0;
+        display: block;
+    
+    
+    
+        div{
+            grid-area: gallery;
+            padding: 30px;
+           
+            
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-evenly;
+            gap: 20px;
+            
+    
+            @include lg{
+                flex-direction: row;
+                padding: 30px 80px;
+                //margin: 
+            }
+           
+    
+            img{
+                width: 100%;
+            }
+    
+        }
+    }
+
 }
+
