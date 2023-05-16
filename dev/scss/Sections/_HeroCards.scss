@@ -67,6 +67,43 @@
         align-items: flex-end;
         justify-content: space-between;
 
+         #about-left{
+
+            background-image: url(../image/Heros/about_left.jpg);
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 5px solid var(--light-orange);
+            background-position: top;
+
+            @include md{
+
+              height: 120px;
+              width: 120px;
+            }
+
+          }
+
+          #about-right{
+
+            background-image: url(../image/Heros/about_right.jpg);
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 5px solid var(--light-orange);
+            background-position: top;
+            
+
+            @include md{
+
+              height: 120px;
+              width: 120px;
+            }
+
+          }
+
+          
+
 
         div{
 
@@ -91,10 +128,7 @@
 
           }
 
-          img{
-
-       
-          }
+         
 
           
         }

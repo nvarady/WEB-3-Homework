@@ -617,6 +617,34 @@ textarea {
   align-items: flex-end;
   justify-content: space-between;
 }
+#HeroCards > div ul li #about-left {
+  background-image: url(../image/Heros/about_left.jpg);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--light-orange);
+  background-position: top;
+}
+@media (min-width: 768px) {
+  #HeroCards > div ul li #about-left {
+    height: 120px;
+    width: 120px;
+  }
+}
+#HeroCards > div ul li #about-right {
+  background-image: url(../image/Heros/about_right.jpg);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--light-orange);
+  background-position: top;
+}
+@media (min-width: 768px) {
+  #HeroCards > div ul li #about-right {
+    height: 120px;
+    width: 120px;
+  }
+}
 #HeroCards > div ul li div h1 {
   padding-right: 16px;
   font-weight: 600;
@@ -625,6 +653,7 @@ textarea {
   width: 98px;
   height: 27px;
 }
+
 /* =============
     Search
 ============= */
