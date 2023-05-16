@@ -336,7 +336,6 @@ button {
   color: white;
   border: none;
   font-size: 14px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   align-content: center;
 }
 
@@ -392,6 +391,14 @@ ul li {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h3 {
+  font-weight: 600;
+}
+
 /* =============
     Buttons
 ============= */
@@ -441,6 +448,17 @@ textarea {
 #footer > div {
   grid-area: footer;
 }
+#footer > div h2 {
+  font-weight: 400;
+  color: var(--dark-purple);
+}
+#footer > div h1 {
+  font-weight: 600;
+  color: var(--dark-purple);
+}
+#footer > div p {
+  color: var(--dark-purple);
+}
 #footer > div #locations {
   grid-area: locations;
 }
@@ -449,6 +467,11 @@ textarea {
 }
 #footer > div #follow {
   grid-area: social-icons;
+}
+@media (min-width: 1024px) {
+  #footer > div #follow {
+    margin-left: auto;
+  }
 }
 #footer > div #follow ul {
   display: flex;
@@ -500,6 +523,32 @@ textarea {
 /* =============
     Hero2
 ============= */
+#Hero2 {
+  display: flex;
+  flex-direction: column;
+}
+#Hero2 #h1 {
+  background-image: url(../image/Heros/glass_animals.jpg);
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #Hero2 #h1 {
+    height: 600px;
+  }
+}
+#Hero2 #h2 {
+  background-image: url(../image/Heros/madonna.jpg);
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #Hero2 #h2 {
+    height: 600px;
+  }
+}
 @media (min-width: 768px) {
   #Hero2 {
     display: grid;
@@ -523,6 +572,9 @@ textarea {
   #Hero2 #h3 {
     grid-area: h3;
     width: 100%;
+    background-image: url(../image/Heros/Rhianna.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -534,7 +586,6 @@ textarea {
   padding-top: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 @media (min-width: 768px) {
   #HeroCards {
@@ -548,11 +599,14 @@ textarea {
 }
 @media (min-width: 768px) {
   #HeroCards > div ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 16px;
     margin-bottom: 0;
+  }
+  #HeroCards > div ul li {
     width: 100%;
+    max-width: 500px;
   }
 }
 #HeroCards > div ul li {
@@ -565,6 +619,7 @@ textarea {
 }
 #HeroCards > div ul li div h1 {
   padding-right: 16px;
+  font-weight: 600;
 }
 #HeroCards > div ul li div button {
   width: 98px;
@@ -574,30 +629,41 @@ textarea {
     Search
 ============= */
 #Search {
-  background-color: white;
+  background-color: var(--white);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  padding: 16px 0px;
 }
 #Search > div {
   grid-area: search;
 }
-#Search > div ul {
-  display: grid;
-  grid-template-columns: 80% auto;
-  gap: 16px;
-  padding-top: 8px;
-  width: 100%;
+#Search > div form {
+  display: flex;
   justify-content: center;
+  align-content: center;
+  gap: 4px;
 }
-#Search > div ul #top-button {
-  color: white;
-  width: 61px;
-  height: 49px;
-}
-#Search > div ul #input {
+#Search > div form #input {
+  border-bottom: 1px solid var(--dark-purple);
   width: 100%;
+  max-width: 1000px;
   height: 43px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  #Search > div form #input {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  #Search > div form #input {
+    font-size: 35px;
+  }
+}
+#Search > div form button {
+  padding: 0px 16px;
+  border-radius: 3.5px;
 }
 
 /* =============
@@ -617,6 +683,7 @@ textarea {
 #WhatsNew > div #new {
   color: white;
   margin-top: 36px;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   #WhatsNew > div ul {
@@ -637,7 +704,7 @@ textarea {
   }
 }
 #WhatsNew > div li {
-  background-color: white;
+  background-color: var(--white);
   text-align: center;
   padding-bottom: 16px;
   margin-top: 24px;
@@ -685,7 +752,7 @@ textarea {
 #Info > div #info-1 img {
   margin-top: 24px;
   margin-bottom: 24px;
-  margin-left: 8px;
+  margin-left: auto;
   align-content: left;
 }
 #Info > div #info-2 {

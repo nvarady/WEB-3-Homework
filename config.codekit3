@@ -406,6 +406,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/image\/Heros\/Rhianna.jpg" : {
+      "ft" : 16384,
+      "iS" : 173903,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/image\/Heros\/Rhianna.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/image\/Search\/search-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,

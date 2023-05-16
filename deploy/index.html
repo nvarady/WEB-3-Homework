@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2551c08ff8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>TicketMaster</title>
 </head>
@@ -14,6 +18,7 @@
         <div>
     
             <img src="image/global/logo.svg" alt="Ticketmaster Logo" class="logo">
+            <!-- <svg>url(image/global/logo.svg")</svg> -->
     
         </div>
     
@@ -23,28 +28,15 @@
     <section id="Search">
     
         <div>
+            <form action="#">
     
-            <ul>
+                <input id="input" type="Search" placeholder="Find millions of live experiences">
     
-                <li >
-        
-                    <input id="input" type="Search" placeholder="Find millions of live experiences">
-        
-        
-                </li>
-        
-            
-                <li>
-    
-                    <button>
-    
-                        <img src="image/Search/search-icon.svg" alt="search">
-                    </button>
-        
-                </li>
-            </ul>
-    
-    
+                <button>
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </button>
+                
+            </form>
         </div>
     
         
@@ -87,10 +79,14 @@
             <ul>
                 <li id="about-left">
                     <div>
-                        <h1>Planning your next show?</h1>
+                        <h1>Planning your 
+                            <br> next show?</h1>
                         <button>Browse</button>
                     </div>
-                    <img src="image/Heros/about_left.jpg" alt="rapper on stage">
+                    <div>
+                        <img src="image/Heros/about_left.jpg" alt="rapper on stage">
+                    </div>
+                    
                 </li>
         
                 <li id="about=right">
@@ -99,7 +95,10 @@
                         <h1>Need Tickets?</h1>
                         <button>Search</button>
                     </div>
-                    <img src="image/Heros/about_right.jpg" alt="rapper on stage">
+                    <div>
+                        <img src="image/Heros/about_right.jpg" alt="rapper on stage">
+                    </div>
+                    
                 </li>
         
             </ul>
@@ -111,11 +110,15 @@
 
     <section id="Hero2">
     
-         <img src="image/Heros/glass_animals.jpg" alt="Glass Animals" class="large-images" id="h1">
+         <section id="h1"></section>
+         <section id="h2"></section>
+         <section id="h3"></section>
     
-         <img src="image/Heros/madonna.jpg" alt="Madonna" class="large-images" id="h2">
+         <!-- <img src="image/Heros/glass_animals.jpg" alt="Glass Animals" class="large-images" id="h1"> -->
     
-         <img src="image/WhatsNew/Rhianna.jpg" alt="Rhianna" class="show-xl" id="h3">
+         <!-- <img src="image/Heros/madonna.jpg" alt="Madonna" class="large-images" id="h2"> -->
+    
+         <!-- <img src="image/WhatsNew/Rhianna.jpg" alt="Rhianna" class="show-xl" id="h3"> -->
     </section>
 
     <section id="WhatsNew">

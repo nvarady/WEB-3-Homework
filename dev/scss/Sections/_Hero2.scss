@@ -2,8 +2,35 @@
     Hero2
 ============= */
 #Hero2{
+    display: flex;
+    flex-direction: column;
 
+    #h1{
 
+        background-image: url(../image/Heros/glass_animals.jpg);
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+
+   @include md{
+
+    height: 600px;
+   }
+    }
+
+    #h2{
+
+        background-image: url(../image/Heros/madonna.jpg);
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+
+   @include md{
+
+    height: 600px;
+   }
+
+    }
 
         @include md{
 
@@ -15,7 +42,7 @@
 
 
             display: grid;
-            margin: -20px;
+           
             
             grid-template-columns: repeat(2,1fr);
             grid-template-areas: "h3 h2"
@@ -32,6 +59,11 @@
             #h3{
                 grid-area: h3;
                 width: 100%;
+                background-image: url(../image/Heros/Rhianna.jpg);
+                background-position: center;
+                background-size: cover;
+
+
             }
         }
         

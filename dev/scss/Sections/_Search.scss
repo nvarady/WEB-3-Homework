@@ -3,39 +3,53 @@
 ============= */
 #Search{
 
-    background-color: white;
+    background-color: var(--white);
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
+    padding: 16px 0px;
 
     >div{
 
 
         grid-area: search;
-        
 
 
-    
-        ul{
-            display: grid;
-            grid-template-columns: 80% auto;
-            gap: 16px;
-            padding-top: 8px;
-            width: 100%;
+        form{
+            display: flex;
+            
             justify-content: center;
-           
-            #top-button{
-
-                color: white;
-                width: 61px;
-                height: 49px;
-            }
+            align-content: center;
+            gap: 4px;
 
             #input{
-                width: 100%;
 
-                height: 43px;
-            }
+                border-bottom: 1px solid var(--dark-purple);
+                width: 100%;
+                max-width: 1000px;
+               height: 43px;
+
+               font-size: 14px;
+
+               @include md{
+                font-size: 25px;
+               }
+
+               @include lg{
+                font-size: 35px;
+               }
+           }
+
+           button{
+            padding: 0px 16px;
+            border-radius: 3.5px;
+
+           }
+
+
+        }
+        
+
+           
       }
     }
-}
