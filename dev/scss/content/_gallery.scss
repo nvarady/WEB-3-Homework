@@ -28,35 +28,22 @@
         background-color: var(--cherry80);
         line-height: 0;
         display: block;
-    
-    
-    
-        div{
-            grid-area: gallery;
-            padding: 30px;
-           
+
+        #g1{
+
+            background-image: url();
+
+        }
+        #g2{
             
+        }
     
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            justify-content: space-evenly;
-            gap: 20px;
-            
     
-            @include lg{
-                flex-direction: row;
-                padding: 30px 80px;
-                //margin: 
-            }
-           
     
-            img{
-                width: 100%;
-            }
+        
     
         }
     }
 
-}
+
 

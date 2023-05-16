@@ -33,7 +33,7 @@
         align-content: center;
         
 
-        @include md{
+        @include lg{
 
            
 
@@ -74,13 +74,14 @@
             #handle{
 
                 background-color: var(--cherry90);
+                
 
                 
                 margin-top: 40px;
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: center;
-               // padding: 20px;
+                padding: 20px;
 
   
                
@@ -96,7 +97,7 @@
                     display: flex;
 
                     ul{
-                        margin-top: auto;
+                        // margin-top: auto;
                        
                     }
                 }    
